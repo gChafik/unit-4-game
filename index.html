@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crystals Collector Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div>
+                <h2 class="bg-secondary text-center text-white">CrystalsCollector!</h2>
+            </div>
+            <div class="bg-warning">
+                <div>
+                    <p>You will be given a random number</p>
+                </div>    
+                <div>
+                    <p>There are four crystals below</p>
+                </div>
+                <div>
+                    <p>You win the game by matching your total score</p>
+                </div>  
+                <div>
+                    <p>The value of each crystal is hidden from you</p>
+                </div>
+                <div>
+                    <p>Each time the game starts, the game will reset the value of each crystal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 bg-info">
+            <div>
+                    <h5>Number to match:</h5>
+                <h5 id="match_number"></h5></div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" bg-primary>
+            <div><h5 id="wins"></h5></div>
+            <div><h5 id="losses"></h5></div>
+        </div>    
+    </div>
+    <br>
+    <div class="row">
+        <div>
+            <img id="gem1" class="bg-white" src="assets/images/gem1.png" alt="gem1" width="60px" height="60px">
+            <img id="gem2" class="bg-white" src="assets/images/gem2.png" alt="gem2" width="60px" height="60px">
+            <img id="gem3" class="bg-white" src="assets/images/gem3.png" alt="gem3" width="60px" height="60px">
+            <img id="gem4" class="bg-white" src="assets/images/gem4.png" alt="gem4" width="60px" height="60px">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="bg-info col-lg-3 col-md-3 col-sm-3 ">
+            <h4>Your Total Score is: </h4>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="bg-info col-lg-2 col-md-2 col-sm-2 ">
+            <h4 id="total_score"></h4>
+        </div>
+    </div>
+</div>
+</body>
+</html>
